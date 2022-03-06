@@ -1,0 +1,278 @@
+
+  /* margin: 0;
+  padding: 0; */
+/* styling for the general body */
+body {
+  font-family: "Manrope", sans-serif;
+  background-image: url("images/bg-pattern.svg");
+  background: hsl(230, 100%, 99%);
+  font-size: 15px;
+  color: hsl(225, 20%, 60%);
+  margin-top: 0;
+}
+/* this section is the background of the  elements-- its just like the body */
+.whole {
+  border-bottom-left-radius: 200px;
+  background: hsl(224, 65%, 95%);
+  height: 50vh;
+}
+/* this thr styling of the page title and banner */
+.header {
+  /* margin-top: 2em; */
+  text-align: center;
+  position: relative;
+
+  /* border-bottom-left-radius: 200px; */
+  /* padding: 70px 30px 300px; */
+  height: 50vh;
+  /* background: hsl(224, 65%, 95%); */
+  /* border-bottom-left-radius: 200px;
+    background: hsl(224, 65%, 95%); */
+}
+.top {
+  height: 40vh;
+}
+.header h2 {
+  color: hsl(227, 35%, 25%);
+}
+/* header text */
+.txt {
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  left: 30%;
+  /* text-align: center; */
+}
+/* this is the container for the main body elements  */
+.container {
+  width: 60vw;
+  height: 70vh;
+  max-width: 500px;
+  /* margin-left: 25em;
+    margin-right: 20em;
+    margin-top: 4em; */
+  margin: 50px auto;
+  border: 1px white solid;
+  box-shadow: -7px 5px 17px 11px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: -7px 5px 17px 11px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: -7px 5px 17px 11px rgba(0, 0, 0, 0.23);
+  border-radius: 1px;
+  background: hsl(0, 0%, 100%);
+  /* color: red; */
+
+  
+}
+/* wraps the whole container elements for control over positioning  */
+.wrapper {
+  /* margin-top:-200px; */
+  /* margin: 5rem; */
+  margin-top: -12em;
+  border-radius: 15px;
+}
+.input-switch{
+  text-align: center;
+
+}
+.page-bill {
+  display: flex;
+}
+.billing-price-panel {
+  display: flex;
+  justify-content: space-between;
+  /* color:red; */
+  align-items: center;
+  margin: 2em;
+}
+.billing-price-panel .pv{
+    letter-spacing: 1.76px;
+}
+
+
+/* .billing{
+  display:flex;
+  align-items: center;
+} */
+.price-time {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  align-items: center;
+  color: hsl(227, 35%, 25%);
+
+}
+.price-time .billing .price{
+  color: hsl(227, 35%, 25%);
+  font-size: 34px;
+  font-weight: 800;
+}
+ .time{
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 5px;
+  color: hsl(225, 20%, 60%);
+
+}
+
+ #price-slider{
+  width:90%;
+  -webkit-appearance:none;
+  height:10px;
+  border-radius: 5px;
+background: linear-gradient(to right, 
+hsl(174, 77%, 80%) 0%,
+ hsl(174, 77%, 80%)50%, 
+ hsl(224, 65%, 95%)0%,
+ hsl(224, 65%, 95%)100%)
+;
+}
+input#price-slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height:40px;
+  width:40px;
+  border-radius:50%;
+  background-color: hsl(174, 86%, 45%);
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 7px 0px 4px (rgba(16, 213, 194, 0.2));
+}
+input#price-slider::-webkit-slider-thumb:hover{
+  background-color:hsl(174, 77%, 80%) ;
+
+}
+.all-billing{
+  margin-top:50px;
+  text-align: center;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.all-billing p{
+  
+   padding:0 7px; 
+}
+.year-discount{
+  display: flex;
+}
+input#switch-billing{
+  /* margin-left:7em; */
+  opacity: 0;
+  
+}
+.switch{
+  display: inline-block;
+  height: 20px;
+  width:45px;
+}
+.discount{
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%) ;
+  border-radius: 10px;
+  font-size: 1em;
+  
+
+}
+.toggle-slider{
+  position: absolute;
+  background-color: hsl(223, 50%, 87%) ;
+  /*  */
+  border-radius: 30%;
+  height:3vh;
+  width: 3vw;
+  /* border: 1px red solid; */
+  /* margin-right: 70em; */
+  transition: all .2s ease;
+}
+  .toggle-slider:before{
+    content:'';
+position: absolute;
+background-color: #FFF;
+height: 14px;
+width:14px;
+border-radius: 50%;
+left:3px;
+top:3px;
+transition: all .4s ease-in-out;
+  }
+  .toggle-slider:hover{
+    background-color: hsl(174, 86%, 45%);
+  }
+.switch input:checked+.toggle-slider:before{
+    transform:translateX(25px);
+   /* border: 2px lightblue solid; */
+  } 
+
+.footer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer a{
+  margin-right: 2em;
+  color: hsl(226, 100%, 87%);
+  background-color: hsl(227, 35%, 25%);
+  text-decoration: none;
+  border-radius: 20%;
+  padding:0.8em;
+}
+.footer a:hover{
+  color:#FFF;
+}
+.footer ul{
+
+    list-style-type: none;
+}
+.footer li{
+  margin-bottom: 7px;
+}
+.footer li img{
+  padding-right:10px ;
+}
+hr {
+  border: 1px dashed grey;
+}
+/* .dolls{
+    font-size:2em; 
+}*/
+.attribution {
+  margin-top: 10em;
+}
+.discount-2{
+  display: none;
+}
+.price-time-2{
+  display: none;
+}
+@media only screen and (max-width:425px){
+  body{
+    font-size:12px ;
+  }
+  .price-time{
+    display: none;
+  }
+  .price-time-2{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .pv{
+    flex-direction: column;
+  }
+  .discount{
+    display: none;
+  }
+  .discount-2{
+    display: inline-block;
+  }
+  .toggle-slider{
+    width: 10vw;
+    margin-left: -2em;
+  }
+  .footer{
+    padding: 30px;
+    flex-direction: column;
+    /* text-align: cenetr; */
+  }
+}

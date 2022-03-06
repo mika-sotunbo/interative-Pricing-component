@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Manrope:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="inter.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="whole">
+      <!-- the title or header of the page section -->
+      <div class="header">
+        <div class="top">
+          <img src="images/pattern-circles.svg" alt="circles" />
+          <div class="txt">
+            <h2><strong> Simple, traffic-based pricing </strong></h2>
+            <p>Sign-up for our 30-day trial. No credit card required.</p>
+          </div>
+        </div>
+      </div>
+      <!-- for the billing  and pageview info -->
+      <section class="wrapper">
+        <div class="container">
+          <div class="billing-price-panel">
+            <div class="pv">
+              <p><span id="pageview">100K</span> PAGEVIEWS</p>
+            </div>
+            <div class="price-time">
+              <div class="billing">
+                <p class="price">$<span class="price" id="cost">16</span>.00</p>
+              </div>
+              <div class="time"><p>/MONTH</p></div>
+            </div>
+          </div>
+          <!-- this div is for the slider and billiung period -->
+          <div class="input-switch">
+            <div class="range-slider">
+              <!-- <input type="range" id="price-slider" class="range" min="0" max="4" value="2"> -->
+              <input
+                type="range"
+                id="price-slider"
+                class="range"
+                min="0"
+                max="4"
+                value="2"
+              />
+            </div>
+            <div class="price-time price-time-2">
+              <div class="billing">
+                <p class="price">$<span class="price" id="cost2">16</span>.00</p>
+              </div>
+              <div class="time"><p>/MONTH</p></div>
+            </div>
+            <!-- <div class="billings">
+          <div><p>MONTHLY BILLING</p></div>  
+          <div>  
+            <label for="" class="switch">
+              <input
+                type="checkbox"
+                name="billing-switch"
+                id="billing-switch"
+              />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+            <div class="year-discount">
+            <p>YEARLY BILLING</p>
+            <p class="discount">25% discount</p>
+          </div>
+          </div> -->
+            <div class="all-billing">
+              <div class="mth"><p>Monthly Billing</p></div>
+              <div class="switch-input">
+                <label for="switch-billing" class="switch">
+                  <input
+                    type="checkbox"
+                    name="switch-biling"
+                    id="switch-billing"
+                  />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+              <div class="year-discount">
+                <p>Yearly Billing</p>
+                <p class="discount">25% discount</p>
+                <p class="discount discount-2">25% </p>
+
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <div class="footer">
+            <ul>
+              <li>
+                <img src="images/icon-check.svg" alt="" /> Unlimited websites
+              </li>
+              <li>
+                <img src="images/icon-check.svg" alt="" />100% data ownership
+              </li>
+              <li><img src="images/icon-check.svg" alt="" /> Email reports</li>
+            </ul>
+            <a href="#" id="start"> Start my trial</a>
+          </div>
+        </div>
+      </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Mika</a>.
+      </div>
+    </div>
+
+    <script src="interactive.js"></script>
+  </body>
+</html>
